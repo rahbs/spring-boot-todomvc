@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class TaskServiceConfig {
     @Bean
     TaskService TaskService(
-            final TaskSpringDataRepository TaskSpringDataRepository
+            final TaskRepository TaskSpringDataRepository
     ) {
         return new TaskSpringDataService(
                 TaskSpringDataRepository
